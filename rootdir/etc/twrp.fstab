@@ -1,0 +1,12 @@
+/efs          ext4     /dev/block/platform/soc.2/by-name/EFS         flags=display="Efs";backup=1;flashimg=1
+/boot         emmc     /dev/block/platform/soc.2/by-name/KERNEL      flags=display="Boot";backup=1;flashimg=1
+/recovery     emmc     /dev/block/platform/soc.2/by-name/RECOVERY    flags=display="Recovery";backup=1;flashimg=1
+/cache        ext4     /dev/block/platform/soc.2/by-name/CACHE       flags=display="Cache";backup=1;flashimg=1
+/system       ext4     /dev/block/platform/soc.2/by-name/SYSTEM      flags=display="System";backup=1;flashimg=1
+/modem        emmc     /dev/block/platform/soc.2/by-name/MODEM       flags=display="Modem";backup=1;flashimg=1
+/data         ext4     /dev/block/platform/soc.2/by-name/USER        flags=length=-16384,encryptable=/dev/block/platform/soc.2/by-name/USER/metadata;display="Data";backup=1
+/preload      ext4     /dev/block/platform/soc.2/by-name/HIDDEN      flags=display="Preload"
+/nvm          ext4     /dev/block/platform/soc.2/by-name/NVM         flags=display="Nvm"
+/persistent   emmc     /dev/block/platform/soc.2/by-name/PERSISTENT  flags=display="Persistent"
+/external_sd  vfat     /dev/block/mmcblk1p1                          flags=display="Micro SDcard";storage;wipeingui;removable
+/usbotg		  auto	   /dev/block/sda1	/dev/block/sda	             flags=display="USB-OTG";storage;removable;backup=0
